@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="images/pic2.jpg" alt="Profile" class="profile-pic">
+      <span class="site-name">Panuwat's Website</span>
+    </div>
+    <div class="navbar-right">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="admin.html" class="active">Admin</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h2>Manage Blog Posts</h2>
+
+    <div class="new-post">
+      <h3>Create New Post</h3>
+      <input id="title" type="text" placeholder="Post Title">
+      <textarea id="content" placeholder="Post Content"></textarea>
+      <input type="file" id="imageFile" accept="image/*">
+      <button onclick="addPost()">Add Post</button>
+
+      <h3>Preview</h3>
+      <div id="post-preview" class="post">
+        <h3 id="preview-title">Post Title Preview</h3>
+        <p id="preview-content">Post content preview...</p>
+        <img id="preview-image" src="" alt="Post Image Preview" style="display:none;">
+      </div>
+    </div>
+
+    <div id="admin-posts"></div>
+  </main>
+
+  <footer>© 2025 Panuwat' Dev</footer>
+  <script src="script.js"></script>
+</body>
+</html>
